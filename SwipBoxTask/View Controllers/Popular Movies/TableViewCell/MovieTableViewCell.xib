@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="178" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="SwipBoxTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yMc-Pc-Zek">
+                        <rect key="frame" x="8" y="8" width="304" height="162"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mx6-EM-RKb">
+                                <rect key="frame" x="0.0" y="0.0" width="121.66666666666667" height="162"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9o-Yu-ie7">
+                                <rect key="frame" x="131" y="0.0" width="165" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5u-ft-fF5">
+                                <rect key="frame" x="131" y="31" width="103.66666666666669" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgN-kv-6Pn">
+                                <rect key="frame" x="234.66666666666666" y="31" width="42.666666666666657" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pln-sH-kdg">
+                                <rect key="frame" x="131" y="58.333333333333336" width="165" height="93.333333333333314"/>
+                                <string key="text">A newly dead New England couple seeks help from a deranged demon exorcist to scare an affluent New York family out of their home</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kgN-kv-6Pn" firstAttribute="centerY" secondItem="u5u-ft-fF5" secondAttribute="centerY" id="01O-st-zEr"/>
+                            <constraint firstItem="a9o-Yu-ie7" firstAttribute="leading" secondItem="Mx6-EM-RKb" secondAttribute="trailing" constant="9.3333333333333286" id="2f5-Os-yRe"/>
+                            <constraint firstAttribute="bottom" secondItem="Mx6-EM-RKb" secondAttribute="bottom" id="5aU-Pp-0DG"/>
+                            <constraint firstItem="Mx6-EM-RKb" firstAttribute="width" secondItem="yMc-Pc-Zek" secondAttribute="width" multiplier="0.4" id="6vi-Yl-peM"/>
+                            <constraint firstItem="u5u-ft-fF5" firstAttribute="top" secondItem="a9o-Yu-ie7" secondAttribute="bottom" constant="8" id="9My-3V-8vi"/>
+                            <constraint firstItem="u5u-ft-fF5" firstAttribute="leading" secondItem="a9o-Yu-ie7" secondAttribute="leading" id="GfT-TK-0Ma"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kgN-kv-6Pn" secondAttribute="trailing" constant="8" id="KtI-0v-dfF"/>
+                            <constraint firstItem="pln-sH-kdg" firstAttribute="top" secondItem="u5u-ft-fF5" secondAttribute="bottom" constant="8" id="LWK-QY-EtS"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pln-sH-kdg" secondAttribute="bottom" constant="8" id="SFW-eo-Lyi"/>
+                            <constraint firstAttribute="trailing" secondItem="a9o-Yu-ie7" secondAttribute="trailing" constant="8" id="SMm-uh-e8i"/>
+                            <constraint firstItem="Mx6-EM-RKb" firstAttribute="top" secondItem="yMc-Pc-Zek" secondAttribute="top" id="Sll-aE-gNQ"/>
+                            <constraint firstItem="Mx6-EM-RKb" firstAttribute="leading" secondItem="yMc-Pc-Zek" secondAttribute="leading" id="VU0-2I-CuK"/>
+                            <constraint firstItem="pln-sH-kdg" firstAttribute="trailing" secondItem="a9o-Yu-ie7" secondAttribute="trailing" id="XN8-nC-vjb"/>
+                            <constraint firstItem="a9o-Yu-ie7" firstAttribute="top" secondItem="Mx6-EM-RKb" secondAttribute="top" id="fGU-S1-0bN"/>
+                            <constraint firstItem="pln-sH-kdg" firstAttribute="leading" secondItem="a9o-Yu-ie7" secondAttribute="leading" id="ha0-ux-EbD"/>
+                            <constraint firstItem="kgN-kv-6Pn" firstAttribute="bottom" secondItem="u5u-ft-fF5" secondAttribute="bottom" id="p4p-hq-3px"/>
+                            <constraint firstItem="kgN-kv-6Pn" firstAttribute="leading" secondItem="u5u-ft-fF5" secondAttribute="trailing" id="vQC-LU-OMs"/>
+                            <constraint firstItem="kgN-kv-6Pn" firstAttribute="top" secondItem="u5u-ft-fF5" secondAttribute="top" id="waK-Mz-ZTR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yMc-Pc-Zek" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JqE-yl-f91"/>
+                    <constraint firstAttribute="bottom" secondItem="yMc-Pc-Zek" secondAttribute="bottom" constant="8" id="M3P-s8-ImQ"/>
+                    <constraint firstItem="yMc-Pc-Zek" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="e4W-m9-GNT"/>
+                    <constraint firstAttribute="trailing" secondItem="yMc-Pc-Zek" secondAttribute="trailing" constant="8" id="jF4-5k-1mN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageViewMovie" destination="Mx6-EM-RKb" id="GTd-fg-0vq"/>
+                <outlet property="labelDate" destination="kgN-kv-6Pn" id="j8G-hO-RtK"/>
+                <outlet property="labelDetail" destination="pln-sH-kdg" id="8wm-yc-Rpb"/>
+                <outlet property="labelName" destination="a9o-Yu-ie7" id="Wyz-f7-J2F"/>
+            </connections>
+            <point key="canvasLocation" x="-90.07633587786259" y="10.563380281690142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
